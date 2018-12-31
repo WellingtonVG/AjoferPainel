@@ -1,0 +1,448 @@
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  @import url('https://fonts.googleapis.com/css?family=Muli');
+  @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+  *{ padding: 0; margin: 0;}
+body{
+  background-color: #1F4E78;
+}
+  #main {
+    display: grid;
+    grid-template-rows: 18vh 82vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "headerA headerB" "ladoA ladoB";
+  }
+  .cabecalhoA {grid-area: headerA; background:#FFD966;}
+  .cabecalhoB {grid-area: headerB; background:#FFD966;}
+  .Rside {grid-area: ladoB; border-left: 1px solid white;}
+  .Lside {grid-area: ladoA; background:#1F4E78;}
+
+  #cabecalhoLadoA {
+    display: grid;
+    grid-template-rows: 11vh;
+    grid-template-columns: 14vw 22vw 14vw;
+    grid-template-areas: "headerA headerB headerC";
+  }
+  .selecMES {grid-area: headerA; background: #1F4E78; color: white;text-align: center;}
+  .selecCLIENTE {grid-area: headerB; background: #1F4E78;color: white; text-align: center;font-family: 'Raleway';padding: 5px;}
+  .selecOP {grid-area: headerC; background: #1F4E78;color: white; text-align: center;font-family: 'Raleway';padding: 5px;}
+
+  #valoresLadoA{
+    display: grid;
+    grid-template-rows: 17.75vh 17.75vh 17.75vh 17.75vh;
+    grid-template-columns: 25vw 25vw;
+    grid-template-areas: "A0 B0" "A1 B1" "A2 B2" "A3 B3";
+  }
+  .vrfrete {grid-area: A0;padding: 10px;}
+  .vrmercadorias {grid-area: B0;padding: 10px;}
+  .vrfretepeso {grid-area: A1;padding: 10px;}
+  .vricms {grid-area: B1;padding: 10px;}
+  .vrfretevalor {grid-area: A2;padding: 10px;}
+  .vrpedagio {grid-area: B2;padding: 10px;}
+  .outrosvr {grid-area: A3;padding: 10px;}
+  .vrgris {grid-area: B3;padding: 10px;}
+
+  #Rside
+  {
+    display: grid;
+    grid-template-rows: 27.3vh 27.3vh 27.3vh;
+    grid-template-columns: 50vw;
+    grid-template-areas: "Lb0" "Lb1" "Lb2";
+  }
+  .anImpacto {grid-area: Lb0;background:#1F4E78;padding: 1vw;}
+  .anFreteQtdEntrega {grid-area: Lb1;background:#1F4E78;padding: 1vw;}
+  .anFreteTon {grid-area: Lb2;background:#1F4E78;padding: 1vw;}
+
+  #titulo
+  {
+    margin: 1vh 0vw 0vh 2vw;
+    color: #1F4E78;
+    font-size: 3.2vw;
+    font-family: 'Raleway';
+    font-weight:lighter;
+  }
+  #subtitulo
+  {
+    margin: 1vh 0vw 0vh 2vw;
+    color: #1F4E78;
+    font-size: 2vw;
+    font-family: 'Raleway';
+    font-weight:lighter;
+  }
+  #DIVselecMES
+  {
+    margin: 7px;
+    font-family: 'Raleway';
+  }
+  #DIVselecCli
+  {
+    margin: 7px;
+    font-family: 'Raleway';
+  }
+  #DIVselecOP
+  {
+    margin: 7px;
+    font-family: 'Raleway';
+  }
+  .title_box01 #title01 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 0px 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box01 #content01 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box01 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box02 #title02 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 0px 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box02 #content02 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box02 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box03 #title03 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box03 #content03 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box03 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box04 #title04 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box04 #content04 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box04 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box05 #title05 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box05 #content05 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box05 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box06 #title06 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box06 #content06 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box06 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box07 #title07 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box07 #content07 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box07 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box08 #title08 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 18PX;
+  }
+
+  .title_box08 #content08 {
+    color: white;
+    margin: 13px 0px 23px 0px;
+    font-family: 'Muli';
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title_box08 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box09 #title09 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 20PX;
+  }
+
+  .title_box09 #content09 {
+    color: white;
+    font-family: 'Muli';
+    text-align: center;
+  }
+  .title_box09 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box10 #title10 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 20PX;
+  }
+
+  .title_box10 #content10 {
+    color: white;
+    font-family: 'Muli';
+    font-size: 30px;
+    text-align: center;
+  }
+  .title_box10 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  .title_box11 #title11 {
+      position: relative;
+      top : -0.5em;
+      margin-left: 1em;
+      display: inline;
+      background-color: #1F4E78;
+      color: white;
+      padding: 5px;
+      font-family: 'Raleway';
+      font-size: 20PX;
+  }
+
+  .title_box11 #content11 {
+    color: white;
+    font-family: 'Muli';
+    font-size: 24px;
+    text-align: center;
+  }
+  .title_box11 {
+    border: white 2px solid;
+    border-radius: 8px;
+  }
+  #anImpacto2
+  {
+    display: grid;
+    grid-template-rows: 20vh;
+    grid-template-columns: 16vw 16vw 16vw;
+    grid-template-areas: "Rb0 Rb1 Rb2";
+  }
+  .fretesobremercad{grid-area: Rb0; border: 2px solid white; margin: 10px; border-radius: 8px;}
+  .pedagiosobrefrete{grid-area: Rb1; border: 2px solid white; margin: 10px; border-radius: 8px;}
+  .pesomedioentrega{grid-area: Rb2; border: 2px solid white; margin: 10px; border-radius: 8px;}
+
+  .qdtitulo
+  {
+    text-align: center;
+    background-color: #FFD966;
+    font-size: 1.6VW;
+    padding: 3px 0px;
+    color: #1F4E78;
+    font-weight: bold;
+    border-radius: px;
+  }
+  .qdconteudo
+  {
+    margin: 8px;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+  }
+#anFreteQtdEntrega2
+{
+  display: grid;
+  grid-template-rows: 20vh;
+  grid-template-columns: 24vw 24vw;
+  grid-template-areas: "Rb3 Rb4";
+}
+  .qtddocs{grid-area: Rb3; border: 2px solid white; margin: 10px; border-radius: 8px;}
+  .vrfreteporentrega{grid-area: Rb4; border: 2px solid white; margin: 10px; border-radius: 8px;}
+#anFreteTon2
+{
+  display: grid;
+  grid-template-rows: 20vh;
+  grid-template-columns: 24vw 24vw;
+  grid-template-areas: "Rb5 Rb6";
+}
+  .toneladatransp{grid-area: Rb5; border: 2px solid white; margin: 10px; border-radius: 8px;}
+  .vrfreteporton{grid-area: Rb6; border: 2px solid white; margin: 10px; border-radius: 8px;}
+
+.comboninja select{
+  background-color: #FFD966;
+  color: #1F4E78;
+  padding: 3px;
+  width: 12vw;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  border-radius: 8px;
+
+}
+.comboninja2 select{
+  background-color:#FFD966;
+  color: #1F4E78;
+  padding: 3px;
+  width: 19vw;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  border-radius: 8px;
+
+}
+.valoresMonetarios
+{
+  color: white;
+  font-family: 'Muli';
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin: 2vh 0vh 4vh 0vh;
+}
+#subtitulo{
+  display: grid;
+  grid-template-rows: 15vh;
+  grid-template-columns: 24vw 24vw;
+  grid-template-areas: "Rsb0 Rsb1";
+}
+.sec1{grid-area: Rsb0; }
+.sec2{grid-area: Rsb1; }
+
+#resultadocli
+{
+  margin: 12vh 0px 0px 30px;
+  color: #1F4E78;
+  font-size: 2vw;
+  font-family: 'Raleway';
+  font-weight: lighter;
+}
+
+#sec2{
+  display: grid;
+  grid-template-rows: 15vh;
+  grid-template-columns: 12vw 12vw;
+  grid-template-areas: "RsbC0 RsbC1";
+}
+.btnA{grid-area: RsbC0; }
+.btnB{grid-area: RsbC1; }
+
